@@ -1,0 +1,24 @@
+POST http://localhost:3333/accounts
+Content-Type: application/json
+
+{
+	"name": "Gerando Senha",
+	"email": "gerando.senha@epiroca.com.br",
+	"password": "12345678"
+}
+
+###
+
+POST http://localhost:3333/session
+Content-Type: application/json
+
+{
+	"email": "gerando.senha@epiroca.com.br",
+	"password": "12345678"
+}
+
+###
+
+GET http://localhost:3333/questions
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI2NzM5MWQwMy05YTQyLTQ4MTYtOTJkNS0yZWUzY2NhZDcyMjciLCJpYXQiOjE3MjI5NTI1Mzl9.ZZefKT0xoPSjlUBurgs_2uWjLn7j-JOvnff27V_6p8x--CCCwQ9veeoD4eu36UuSQ2rpTTh-BY5CeVizpaN_De_eHoBKOYn96J7rOxYzOg_mBGpaxx8U4iKpSwLOHbx0TmhXAvRf5CYdj596g3i9e6I66hji8lEaWVS8xFWzX31W65IcHwFiH2ePCMVK-yollbCAJsUHiB__n02GX_8Peteht5QAYdQso473YNCkQJX8Rm5qJ0j4AnwpgP4Ep82cTfo_ATXAux4dsE5TgA06D960M44CKmMZn8DPNR5KK-3AXnfg66sdEvnAIwbxkYpS2ebISfxFLcL4NLWgOM8ubg
